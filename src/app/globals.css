@@ -2,18 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  button:hover div {
+    @apply scale-[98%] sm:scale-95;
+  }
+  h1 {
+    @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] p-3;
+  }
+  h2 {
+    @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] p-3;
+  }
+  p {
+    @apply md:text-lg font-druk_text_medium my-2;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.carousel_text_show {
+  animation: show 500ms linear forwards;
+  opacity: 20%;
+}
+.carousel_text_hide {
+  animation: hide 300ms linear forwards;
+  opacity: 20%;
+  display: none;
+}
+@keyframes hide {
+  100% {
+    transform: translateY(8px);
+    opacity: 10%;
+    display: none;
   }
+  /* 100% {
+    display: none;
+  } */
+}
+@keyframes show {
+  to {
+    transform: translateY(-8px);
+    opacity: 100%;
+  }
+}
+
+.fixed_bg {
+  background-image: url(../../public/home/fixed_bg_white.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.black_bg {
+  background-image: url(../../public/home/second_sec_bg_pc.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+@media (max-width: 640.95px) {
+  .black_bg {
+    background-image: url(../../public/home/second_sec_bg_mobile.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+  }
+}
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
