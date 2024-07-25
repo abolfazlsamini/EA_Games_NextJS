@@ -11,7 +11,7 @@ export default function Navbar() {
   }
   return (
     <div className="top-0 z-10 w-full fixed">
-      <nav className="relative px-4 py-1 lg:py-9 xl:py-5 md:py-7 sm:py-5 flex justify-between items-center bg-black">
+      <nav className="relative px-4 py-1 lg:py-5 xl:py-2 md:py-5 sm:py-5 flex justify-between items-center bg-black">
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
           <Image
             alt=""
@@ -21,8 +21,8 @@ export default function Navbar() {
             height={0}
           ></Image>
         </a>
-        <div className="lg:hidden ">
-          <button className="navbar-burger flex items-center text-blue-600 p-3">
+        <div className="lg:hiddens">
+          <button className="navbar-burger flex items-center text-[#f00] p-3">
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -116,7 +116,10 @@ export default function Navbar() {
           </li>
           <li className="text-gray-300"></li>
         </ul>
-        <a
+        <button className="bg-[#F04] m-2 w-full md:block hidden sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <div>BUY NOW</div>
+        </button>
+        {/* <a
           className="portrait:hidden sm:hidden md:block sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl "
           href="#"
         >
@@ -127,7 +130,7 @@ export default function Navbar() {
           href="#"
         >
           Download
-        </a>
+        </a> */}
       </nav>
       <div className={`navbar-menu relative z-50 ${toggle}`}>
         <div

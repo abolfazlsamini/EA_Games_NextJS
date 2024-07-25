@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  /* * {
+    outline: 1px solid red;
+  } */
   button:hover div {
     @apply scale-[98%] sm:scale-95;
   }
