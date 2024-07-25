@@ -7,16 +7,23 @@
     @apply scale-[98%] sm:scale-95;
   }
   h1 {
-    @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] p-3;
+    @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] py-3;
   }
   h2 {
-    @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] p-3;
+    @apply font-druk_wide_super uppercase md:text-[15px] 2xl:text-[18px] text-[21px] py-3;
   }
   p {
     @apply md:text-lg font-druk_text_medium my-2;
   }
 }
-
+.gradient_bg {
+  background: linear-gradient(
+    60deg,
+    rgba(13, 16, 66, 1) 0%,
+    rgba(13, 16, 66, 1) 50%,
+    rgba(255, 71, 71, 1) 100%
+  );
+}
 .carousel_text_show {
   animation: show 500ms linear forwards;
   opacity: 20%;
