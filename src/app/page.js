@@ -14,6 +14,7 @@ import col2_pic_2 from "../../public/home/col2_pic_2.jpg";
 import col2_pic_3 from "../../public/home/col2_pic_3.jpg";
 import buttom_pic_pc from "../../public/home/buttom_pic_pc.jpg";
 import gradient_logo from "../../public/home/gradient_logo.svg";
+import Navbar from "./navbar";
 
 const Main_sec = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -438,7 +439,7 @@ const SocialMedia_sec = () => {
             </a>
           </div>
 
-          <div className="border-r border-black p-10">
+          <div className="p-10">
             <a className="text-black ease-in-out transition duration-300 cursor-pointer">
               <svg
                 className="w-8 h-8 hover:scale-110 transition-all duration-100"
@@ -467,7 +468,8 @@ const SocialMedia_sec = () => {
 };
 export default function Home() {
   return (
-    <main className="">
+    <main className="relative">
+      <Navbar />
       <div className="fixed_bg">
         <Main_sec />
         <Frostbite_sec />
