@@ -40,7 +40,13 @@ const Main_sec = () => {
               media="(max-width:767.95px)"
             ></source>
 
-            <Image alt="" src={main_pic_pc} width={0} height={0} />
+            <Image
+              alt=""
+              src={main_pic_pc}
+              width={0}
+              height={0}
+              className="w-full"
+            />
           </picture>
         </div>
         <div className="md:absolute md:bg-transparent xl:pl-24 bg-[#161616] md:top-1/2 md:-translate-y-1/2 md:w-2/5 w-full h-max px-10 py-10 md:p-4">
@@ -338,10 +344,16 @@ const Bottum_pic_sec = () => {
             media="(max-width:767.95px)"
           ></source>
 
-          <Image alt="" src={buttom_pic_pc} width={0} height={0} className="" />
+          <Image
+            alt=""
+            src={buttom_pic_pc}
+            width={0}
+            height={0}
+            className="w-full"
+          />
         </picture>
 
-        <div className="absolute px-10 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-16 bottom-20 md:w-2/5">
+        <div className="absolute px-10 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-16 bottom-10 md:w-2/5">
           <p className="pb-1 mb-0 text-lg">
             EA SPORTS™ UFC® 5 Ultimate Edition
           </p>

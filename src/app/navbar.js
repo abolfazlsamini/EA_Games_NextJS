@@ -35,7 +35,7 @@ export default function Navbar() {
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
           <Image
             alt=""
-            className="w-48 px-3 py-1"
+            className="w-40 px-3 py-1"
             src={logo}
             width={0}
             height={0}
