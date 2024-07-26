@@ -32,7 +32,7 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <a className="text-3xl font-bold leading-none lg:hidden" href="/">
+        <a className="md:hidden text-3xl font-bold leading-none" href="/">
           <Image
             alt=""
             className="w-40 px-3 py-1"
@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
           </div>
         </a>
-        <ul className="hidden absolute top-1/2 left-0 transform -translate-y-1/2 translate-x-3 lg:flex lg:mx-auto lg:w-auto lg:space-x-6 sm:space-x-3">
+        <ul className="hidden md:flex absolute top-1/2 left-0 transform -translate-y-1/2 translate-x-3 lg:mx-auto lg:w-auto lg:space-x-6 sm:space-x-3">
           <li>
             <a className=" font-bold leading-none" href="/">
               <Image
@@ -152,18 +152,6 @@ export default function Navbar() {
             </div>
           </div>
         </a>
-        {/* <a
-          className="portrait:hidden sm:hidden md:block sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl "
-          href="#"
-        >
-          Sign In
-        </a>
-        <a
-          className="portrait:hidden sm:hidden md:block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl "
-          href="#"
-        >
-          Download
-        </a> */}
       </div>
       <div
         className={`navbar-menu relative z-50  transition-all duration-1000 overflow-hidden`}
