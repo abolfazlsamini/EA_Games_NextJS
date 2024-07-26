@@ -49,12 +49,12 @@ const Main_sec = () => {
             />
           </picture>
         </div>
-        <div className="md:absolute md:bg-transparent xl:pl-24 bg-[#161616] md:top-1/2 md:-translate-y-1/2 md:w-2/5 w-full h-max px-10 py-10 md:p-4">
-          <div className="min-h-24 flex items-center ">
+        <div className="h-max w-full bg-[#161616] px-10 py-10 md:absolute md:top-1/2 md:w-2/5 md:-translate-y-1/2 md:bg-transparent md:p-4 xl:pl-24">
+          <div className="flex min-h-24 items-center">
             <div
               className={
                 textIndex === 1
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -63,7 +63,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 2
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -72,7 +72,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 3
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -81,7 +81,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 4
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -91,7 +91,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 5
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -100,7 +100,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 6
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -109,7 +109,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 7
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -118,7 +118,7 @@ const Main_sec = () => {
             <div
               className={
                 textIndex === 8
-                  ? "carousel_text_show sm:text-lg font-druk_text_medium my-2"
+                  ? "carousel_text_show my-2 font-druk_text_medium sm:text-lg"
                   : "carousel_text_hide"
               }
             >
@@ -134,19 +134,19 @@ const Main_sec = () => {
               className="py-2"
             />
           </div>
-          <div className="md:text-2xl text-xl font-druk_text_medium my-2">
+          <div className="my-2 font-druk_text_medium text-xl md:text-2xl">
             EA SPORTS™ UFC® 5 Ultimate Edition
           </div>
-          <div className="md:text-lg font-druk_text_medium my-2">
+          <div className="my-2 font-druk_text_medium md:text-lg">
             Begin your UFC 5 journey with the Ultimate Edition, packed with more
             fighter content than ever, including Hall of Fame Alter Egos, 15
             newly rostered fighters, and more.
           </div>
           <div className="md:flex">
-            <button className="bg-[#F04] btn m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+            <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
               <div className="btn_div">BUY NOW</div>
             </button>
-            <button className="bg-transparent btn border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+            <button className="btn m-2 w-full rounded-3xl border-2 bg-transparent p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
               <div className="btn_div">BUY NOW</div>
             </button>
           </div>
@@ -159,8 +159,8 @@ const Frostbite_sec = () => {
   return (
     <section>
       <div className="black_bg">
-        <div className="h-max relative overflow-hidden">
-          <div className=" text-white py-20 text-center md:px-20 px-10">
+        <div className="relative h-max overflow-hidden">
+          <div className="px-10 py-20 text-center text-white md:px-20">
             <h1>Powered by Frostbite™</h1>
             <p>
               EA SPORTS™ UFC® 5 is the next evolution of the fight game.
@@ -177,22 +177,22 @@ const Frostbite_sec = () => {
 const HalfPic_sec = () => {
   return (
     <section>
-      <div className="md:flex flex-row-reverse">
+      <div className="flex-row-reverse md:flex">
         <Image
           alt=""
           src={half_pic_1}
           width={0}
           height={0}
-          className="md:w-1/2 h-full"
+          className="h-full md:w-1/2"
         />
 
-        <div className="md:w-1/2 md:px-16 w-11/12 mx-auto">
+        <div className="mx-auto w-11/12 md:w-1/2 md:px-16">
           <h1 className="text-black">UFC 5 NEW ROSTERED FIGHTER RATINGS</h1>
           <p className="text-black">
             Check out EA SPORTS UFC 5's new rostered fighter ratings and prepare
             to dominate inside the Octagon.
           </p>
-          <button className="bg-[#F04] btn m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">LEARN MORE</div>
           </button>
         </div>
@@ -203,16 +203,16 @@ const HalfPic_sec = () => {
           src={half_pic_2}
           width={0}
           height={0}
-          className="md:w-1/2 h-full"
+          className="h-full md:w-1/2"
         />
 
-        <div className="md:w-1/2 md:px-16 w-11/12 mx-auto">
+        <div className="mx-auto w-11/12 md:w-1/2 md:px-16">
           <h1 className="text-black">Prime: European Elites Alter Egos</h1>
           <p className="text-black">
             Celebrate UFC 304 Fight Week with 4 new Alter Egos from Prime:
             European Elites.
           </p>
-          <button className="bg-[#F04] btn m-2 w-full sm:max-w-44 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-44 sm:text-lg md:hover:scale-105">
             <div className="btn_div">SEE THE ALTER EGOS</div>
           </button>
         </div>
@@ -223,47 +223,47 @@ const HalfPic_sec = () => {
 const Col1_sec = () => {
   return (
     <section>
-      <h1 className="text-black text-center pt-20 pb-8">LATEST NEWS</h1>
-      <div className="md:flex md:px-20 xl:px-2 px-7 mx-auto max-w-[1120px]">
-        <div className="md:px-3 md:w-1/3">
+      <h1 className="pb-8 pt-20 text-center text-black">LATEST NEWS</h1>
+      <div className="mx-auto max-w-[1120px] px-7 md:flex md:px-20 xl:px-2">
+        <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_1} width={0} height={0} className="" />
           <div>
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               Here's everything you need to know about voting for future Alter
               Egos in EA SPORTS UFC 5.
             </p1>
           </div>
         </div>
-        <div className="md:px-3 md:w-1/3">
+        <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_2} width={0} height={0} className="" />
           <div>
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               Here's everything you need to know about voting for future Alter
               Egos in EA SPORTS UFC 5.
             </p1>
           </div>
         </div>
-        <div className="md:px-3 md:w-1/3">
+        <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_3} width={0} height={0} className="" />
           <div>
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               Here's everything you need to know about voting for future Alter
               Egos in EA SPORTS UFC 5.
             </p1>
           </div>
         </div>
       </div>
-      <div className="pt-20 mx-auto flex justify-center pb-32">
-        <button className="bg-transparent btn text-black border-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+      <div className="mx-auto flex justify-center pb-32 pt-20">
+        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">MORE NEWS</div>
         </button>
       </div>
@@ -273,14 +273,14 @@ const Col1_sec = () => {
 const Col2_sec = () => {
   return (
     <section>
-      <div className="md:flex md:px-20 xl:px-2 mx-auto max-w-[1120px]">
-        <div className="md:px-3 md:w-1/3 py-3">
+      <div className="mx-auto max-w-[1120px] md:flex md:px-20 xl:px-2">
+        <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_1} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               What makes an MMA fight? It's the stakes, technique, drama, and
               pure reality of the moment. UFC 5 captures that in more authentic
               detail than ever before, from next-generation graphics upgrades
@@ -291,13 +291,13 @@ const Col2_sec = () => {
             </p1>
           </div>
         </div>
-        <div className="md:px-3 md:w-1/3 py-3">
+        <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_2} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               What makes an MMA fight? It's the stakes, technique, drama, and
               pure reality of the moment. UFC 5 captures that in more authentic
               detail than ever before, from next-generation graphics upgrades
@@ -308,13 +308,13 @@ const Col2_sec = () => {
             </p1>
           </div>
         </div>
-        <div className="md:px-3 md:w-1/3 py-3">
+        <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_3} width={0} height={0} className="" />
           <div className="px-5 pb-8">
             <h2 className="text-black">
               EA SPORTS UFC 5 Alter Ego Community Vote
             </h2>
-            <p1 className="text-black md:text-base font-druk_text_medium my-2">
+            <p1 className="my-2 font-druk_text_medium text-black md:text-base">
               What makes an MMA fight? It's the stakes, technique, drama, and
               pure reality of the moment. UFC 5 captures that in more authentic
               detail than ever before, from next-generation graphics upgrades
@@ -326,8 +326,8 @@ const Col2_sec = () => {
           </div>
         </div>
       </div>
-      <div className="py-20 mx-auto flex justify-center">
-        <button className="bg-transparent btn text-black border-black border-2 m-2 w-full sm:w-max p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105 rounded-3xl">
+      <div className="mx-auto flex justify-center py-20">
+        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:w-max sm:text-lg md:hover:scale-105">
           <div className="btn_div">NEW GAMEPLAY FEATURES</div>
         </button>
       </div>
@@ -337,7 +337,7 @@ const Col2_sec = () => {
 const Bottum_pic_sec = () => {
   return (
     <section>
-      <div className="relative max-h-[30rem] md:max-h-max overflow-hidden ">
+      <div className="relative max-h-[30rem] overflow-hidden md:max-h-max">
         <picture>
           <source
             srcSet="./home/buttom_pic_mobile.jpg"
@@ -353,16 +353,16 @@ const Bottum_pic_sec = () => {
           />
         </picture>
 
-        <div className="absolute px-10 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-16 bottom-10 md:w-2/5">
-          <p className="pb-1 mb-0 text-lg">
+        <div className="absolute bottom-10 px-10 md:bottom-auto md:left-16 md:top-1/2 md:w-2/5 md:-translate-y-1/2">
+          <p className="mb-0 pb-1 text-lg">
             EA SPORTS™ UFC® 5 Ultimate Edition
           </p>
-          <p className="pt-0 mt-0">
+          <p className="mt-0 pt-0">
             Get the Ultimate Edition and get multiple Alter Ego Bundles
             (including from Pride and Prime drops), 3 new Legends fighters, and
             more.
           </p>
-          <button className="bg-white btn text-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <button className="btn m-2 w-full rounded-3xl border-2 bg-white p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">BUY NOW</div>
           </button>
         </div>
@@ -373,18 +373,18 @@ const Bottum_pic_sec = () => {
 const Gradient_sec = () => {
   return (
     <section className="pb-10 md:px-5">
-      <div className="gradient_bg w-11/12 md:w-full mx-auto rounded-[3rem] mt-4 flex flex-col items-center py-10 px-10 text-center">
+      <div className="gradient_bg mx-auto mt-4 flex w-11/12 flex-col items-center rounded-[3rem] px-10 py-10 text-center md:w-full">
         <Image
           alt=""
           src={gradient_logo}
           width={0}
           height={0}
-          className="w-10/12 my-2"
+          className="my-2 w-10/12"
         />
-        <div className="font-druk_wide_super uppercase lg:text-[27px] my-2">
+        <div className="my-2 font-druk_wide_super uppercase lg:text-[27px]">
           Try now for up to 10 hours!**
         </div>
-        <button className="bg-[#ff4747] btn w-full sm:max-w-36 mt-5 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+        <button className="btn mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
           <div className="btn_div">LEARN MORE</div>
         </button>
       </div>
@@ -394,13 +394,13 @@ const Gradient_sec = () => {
 const SocialMedia_sec = () => {
   return (
     <section>
-      <div className="text-center py-10 overflow-hidden">
-        <h1 className="text-black pb-5">FOLLOW US @EASPORTSUFC</h1>
+      <div className="overflow-hidden py-10 text-center">
+        <h1 className="pb-5 text-black">FOLLOW US @EASPORTSUFC</h1>
         <div className="flex justify-center pb-5">
-          <div className="border-r border-black sm:p-10 p-5">
-            <a className="text-black ease-in-out transition duration-300 cursor-pointer">
+          <div className="border-r border-black p-5 sm:p-10">
+            <a className="cursor-pointer text-black transition duration-300 ease-in-out">
               <svg
-                className="w-8 h-8 hover:scale-110 transition-all duration-100"
+                className="h-8 w-8 transition-all duration-100 hover:scale-110"
                 fill="currentColor"
                 viewBox="0 0 40 40"
                 aria-hidden="true"
@@ -413,10 +413,10 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-          <div className="border-r border-black sm:p-10 p-5">
-            <a className="text-black ease-in-out transition duration-300 cursor-pointer">
+          <div className="border-r border-black p-5 sm:p-10">
+            <a className="cursor-pointer text-black transition duration-300 ease-in-out">
               <svg
-                className="w-8 h-8 hover:scale-110 transition-all duration-100"
+                className="h-8 w-8 transition-all duration-100 hover:scale-110"
                 fill="currentColor"
                 viewBox="0 0 60 62"
                 aria-hidden="true"
@@ -429,10 +429,10 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-          <div className="border-r border-black sm:p-10 p-5">
-            <a className="text-black ease-in-out transition duration-300 cursor-pointer">
+          <div className="border-r border-black p-5 sm:p-10">
+            <a className="cursor-pointer text-black transition duration-300 ease-in-out">
               <svg
-                className="w-8 h-8 hover:scale-110 transition-all duration-100"
+                className="h-8 w-8 transition-all duration-100 hover:scale-110"
                 fill="currentColor"
                 viewBox="0 0 192 192"
                 aria-hidden="true"
@@ -450,10 +450,10 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-          <div className="sm:p-10 p-5">
-            <a className="text-black ease-in-out transition duration-300 cursor-pointer">
+          <div className="p-5 sm:p-10">
+            <a className="cursor-pointer text-black transition duration-300 ease-in-out">
               <svg
-                className="w-8 h-8 hover:scale-110 transition-all duration-100"
+                className="h-8 w-8 transition-all duration-100 hover:scale-110"
                 fill="currentColor"
                 viewBox="0 0 40 40"
                 aria-hidden="true"
@@ -481,7 +481,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Navbar />
-      <div className="fixed_bg overflow-hidden mt-16">
+      <div className="fixed_bg mt-16 overflow-hidden">
         <Main_sec />
         <Frostbite_sec />
         <HalfPic_sec />
