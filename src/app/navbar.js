@@ -226,7 +226,7 @@ export default function Navbar() {
                       className={
                         accordion.acc1
                           ? "max-h-52 transition-transform duration-300 px-3"
-                          : "max-h-0 overflow-hidden transition-all duration-300"
+                          : "max-h-0 overflow-hidden transition-all duration-300 pb-3 border-b"
                       }
                     >
                       <div className="py-3 border-b hover:text-[#f00]">
@@ -246,13 +246,13 @@ export default function Navbar() {
                   }
                   className="relative cursor-pointer transition-all duration-300 py-3 "
                 >
-                  <div>
+                  <div className="">
                     ALTER EGOS
                     <div
                       className={
                         accordion.acc2
-                          ? "max-h-12 transition-transform duration-300 px-3"
-                          : "max-h-0 overflow-hidden transition-all duration-300"
+                          ? "max-h-52 transition-transform duration-300 px-3 "
+                          : "max-h-0 overflow-hidden transition-all duration-300 pb-3 border-b"
                       }
                     >
                       <div className="py-3 border-b hover:text-[#f00]">
