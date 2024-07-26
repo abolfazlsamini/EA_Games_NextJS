@@ -19,7 +19,7 @@ import Navbar from "./navbar";
 const Main_sec = () => {
   const [textIndex, setTextIndex] = useState(0);
   function next() {
-    if (textIndex > 8) setTextIndex(1);
+    if (textIndex > 7) setTextIndex(1);
     else setTextIndex(textIndex + 1);
   }
   useEffect(() => {
@@ -119,7 +119,7 @@ const Main_sec = () => {
               Bleacher Report
             </div>
           </div>
-          <div className="w-10/12 md:w-full">
+          <div className="w-10/12 md:w-11/12">
             <Image
               alt=""
               src={logo_main}
@@ -137,11 +137,11 @@ const Main_sec = () => {
             newly rostered fighters, and more.
           </div>
           <div className="md:flex">
-            <button className="bg-[#F04] m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-              <div>BUY NOW</div>
+            <button className="bg-[#F04] btn m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+              <div className="btn_div">BUY NOW</div>
             </button>
-            <button className="bg-transparent border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-              <div>BUY NOW</div>
+            <button className="bg-transparent btn border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+              <div className="btn_div">BUY NOW</div>
             </button>
           </div>
         </div>
@@ -186,8 +186,8 @@ const HalfPic_sec = () => {
             Check out EA SPORTS UFC 5's new rostered fighter ratings and prepare
             to dominate inside the Octagon.
           </p>
-          <button className="bg-[#F04] m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-            <div>LEARN MORE</div>
+          <button className="bg-[#F04] btn m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+            <div className="btn_div">LEARN MORE</div>
           </button>
         </div>
       </div>
@@ -206,8 +206,8 @@ const HalfPic_sec = () => {
             Celebrate UFC 304 Fight Week with 4 new Alter Egos from Prime:
             European Elites.
           </p>
-          <button className="bg-[#F04] m-2 w-full sm:max-w-44 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-            <div>SEE THE ALTER EGOS</div>
+          <button className="bg-[#F04] btn m-2 w-full sm:max-w-44 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+            <div className="btn_div">SEE THE ALTER EGOS</div>
           </button>
         </div>
       </div>
@@ -257,8 +257,8 @@ const Col1_sec = () => {
         </div>
       </div>
       <div className="pt-20 mx-auto flex justify-center pb-32">
-        <button className="bg-transparent text-black border-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-          <div>MORE NEWS</div>
+        <button className="bg-transparent btn text-black border-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <div className="btn_div">MORE NEWS</div>
         </button>
       </div>
     </section>
@@ -321,8 +321,8 @@ const Col2_sec = () => {
         </div>
       </div>
       <div className="py-20 mx-auto flex justify-center">
-        <button className="bg-transparent text-black border-black border-2 m-2 w-full sm:w-max p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105 rounded-3xl">
-          <div>NEW GAMEPLAY FEATURES</div>
+        <button className="bg-transparent btn text-black border-black border-2 m-2 w-full sm:w-max p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105 rounded-3xl">
+          <div className="btn_div">NEW GAMEPLAY FEATURES</div>
         </button>
       </div>
     </section>
@@ -341,8 +341,8 @@ const Bottum_pic_sec = () => {
           <Image alt="" src={buttom_pic_pc} width={0} height={0} className="" />
         </picture>
 
-        <div className="absolute px-10 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-16 bottom-0 md:w-2/5">
-          <p className="pb-0 mb-0 text-lg">
+        <div className="absolute px-10 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-16 bottom-20 md:w-2/5">
+          <p className="pb-1 mb-0 text-lg">
             EA SPORTS™ UFC® 5 Ultimate Edition
           </p>
           <p className="pt-0 mt-0">
@@ -350,8 +350,8 @@ const Bottum_pic_sec = () => {
             (including from Pride and Prime drops), 3 new Legends fighters, and
             more.
           </p>
-          <button className="bg-white text-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-            <div>BUY NOW</div>
+          <button className="bg-white btn text-black border-2 m-2 w-full sm:max-w-36 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+            <div className="btn_div">BUY NOW</div>
           </button>
         </div>
       </div>
@@ -372,8 +372,8 @@ const Gradient_sec = () => {
         <div className="font-druk_wide_super uppercase lg:text-[27px] my-2">
           Try now for up to 10 hours!**
         </div>
-        <button className="bg-[#ff4747] w-full sm:max-w-36 mt-5 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
-          <div>LEARN MORE</div>
+        <button className="bg-[#ff4747] btn w-full sm:max-w-36 mt-5 p-5 py-3 sm:text-lg font-druk_text_medium hover:scale-[102%] md:hover:scale-105  rounded-3xl">
+          <div className="btn_div">LEARN MORE</div>
         </button>
       </div>
     </section>
@@ -382,10 +382,10 @@ const Gradient_sec = () => {
 const SocialMedia_sec = () => {
   return (
     <section>
-      <div className="text-center py-10">
+      <div className="text-center py-10 overflow-hidden">
         <h1 className="text-black pb-5">FOLLOW US @EASPORTSUFC</h1>
         <div className="flex justify-center pb-5">
-          <div className="border-r border-black p-10">
+          <div className="border-r border-black sm:p-10 p-5">
             <a className="text-black ease-in-out transition duration-300 cursor-pointer">
               <svg
                 className="w-8 h-8 hover:scale-110 transition-all duration-100"
@@ -401,7 +401,7 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-          <div className="border-r border-black p-10">
+          <div className="border-r border-black sm:p-10 p-5">
             <a className="text-black ease-in-out transition duration-300 cursor-pointer">
               <svg
                 className="w-8 h-8 hover:scale-110 transition-all duration-100"
@@ -417,7 +417,7 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-          <div className="border-r border-black p-10">
+          <div className="border-r border-black sm:p-10 p-5">
             <a className="text-black ease-in-out transition duration-300 cursor-pointer">
               <svg
                 className="w-8 h-8 hover:scale-110 transition-all duration-100"
@@ -438,8 +438,7 @@ const SocialMedia_sec = () => {
               </svg>
             </a>
           </div>
-
-          <div className="p-10">
+          <div className="sm:p-10 p-5">
             <a className="text-black ease-in-out transition duration-300 cursor-pointer">
               <svg
                 className="w-8 h-8 hover:scale-110 transition-all duration-100"
@@ -470,7 +469,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Navbar />
-      <div className="fixed_bg">
+      <div className="fixed_bg overflow-hidden mt-16">
         <Main_sec />
         <Frostbite_sec />
         <HalfPic_sec />

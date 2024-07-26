@@ -6,9 +6,7 @@
   /* * {
     outline: 1px solid red;
   } */
-  button:hover div {
-    @apply scale-[98%] sm:scale-95;
-  }
+
   h1 {
     @apply font-druk_wide_super uppercase md:text-[27px] 2xl:text-[44px] text-[21px] py-3;
   }
@@ -17,6 +15,11 @@
   }
   p {
     @apply md:text-lg font-druk_text_medium my-2;
+  }
+}
+@layer components {
+  .btn:hover .btn_div {
+    @apply scale-[98%] sm:scale-95;
   }
 }
 .gradient_bg {
