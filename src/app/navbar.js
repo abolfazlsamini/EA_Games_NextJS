@@ -222,7 +222,13 @@ export default function Navbar() {
                         GAMEPLAY
                       </div>
                       <div className="border-b py-3 hover:text-[#f00]">
-                        features and mods
+                        Features and Modes
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        peresentation
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        NT Playfusion membership
                       </div>
                     </div>
                   </div>
@@ -236,7 +242,7 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    ALTER EGOS
+                    Maps
                     <div
                       className={
                         accordion.acc2
@@ -245,10 +251,139 @@ export default function Navbar() {
                       }
                     >
                       <div className="border-b py-3 hover:text-[#f00]">
-                        GAMEPLAY
+                        Dust Storm
                       </div>
                       <div className="border-b py-3 hover:text-[#f00]">
-                        features and mods
+                        Urban Siege
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Artic Blast
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Jungle Havoc
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Desert Mirage
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Metro Mayhem
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Devils Mountain
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-1">
+                <div
+                  onClick={() =>
+                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                  }
+                  className="relative cursor-pointer py-3 transition-all duration-300"
+                >
+                  <div className="">
+                    Game Mode
+                    <div
+                      className={
+                        accordion.acc2
+                          ? "max-h-52 px-3 transition-transform duration-300"
+                          : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
+                      }
+                    >
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Capture the flag
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Dominitaion
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Free for all
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Kill Confirmed
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-1">
+                <div
+                  onClick={() =>
+                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                  }
+                  className="relative cursor-pointer py-3 transition-all duration-300"
+                >
+                  <div className="">
+                    Assistant Tools
+                    <div
+                      className={
+                        accordion.acc2
+                          ? "max-h-52 px-3 transition-transform duration-300"
+                          : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
+                      }
+                    >
+                      <div className="border-b py-3 hover:text-[#f00]">UAV</div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Counter UAV
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Cruise Missile
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Remote Turret
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-1">
+                <div
+                  onClick={() =>
+                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                  }
+                  className="relative cursor-pointer py-3 transition-all duration-300"
+                >
+                  <div className="">
+                    News and Media
+                    <div
+                      className={
+                        accordion.acc2
+                          ? "max-h-52 px-3 transition-transform duration-300"
+                          : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
+                      }
+                    >
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        News
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Trailer & Screenshots
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-1">
+                <div
+                  onClick={() =>
+                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                  }
+                  className="relative cursor-pointer py-3 transition-all duration-300"
+                >
+                  <div className="">
+                    Community
+                    <div
+                      className={
+                        accordion.acc2
+                          ? "max-h-52 px-3 transition-transform duration-300"
+                          : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
+                      }
+                    >
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Forum
+                      </div>
+                      <div className="border-b py-3 hover:text-[#f00]">
+                        Newsletter Sign Up
                       </div>
                     </div>
                   </div>
