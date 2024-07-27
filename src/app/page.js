@@ -17,19 +17,19 @@ import gradient_logo from "../../public/home/gradient_logo.svg";
 import Navbar from "./navbar";
 
 const Main_sec = () => {
-  const [textIndex, setTextIndex] = useState(0);
-  function next() {
-    if (textIndex > 7) setTextIndex(1);
-    else setTextIndex(textIndex + 1);
-  }
-  useEffect(() => {
-    const interval = setInterval(() => {
-      next();
-      console.log(textIndex);
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, 5000);
-    return () => clearInterval(interval);
-  });
+  // const [textIndex, setTextIndex] = useState(0);
+  // function next() {
+  //   if (textIndex > 7) setTextIndex(1);
+  //   else setTextIndex(textIndex + 1);
+  // }
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     next();
+  //     console.log(textIndex);
+  //     // eslint-disable-next-line react-hooks/exhaustive-deps
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // });
   return (
     <section>
       <div className="relative">
@@ -50,7 +50,7 @@ const Main_sec = () => {
           </picture>
         </div>
         <div className="h-max w-full bg-[#161616] px-10 py-10 md:absolute md:top-1/2 md:w-2/5 md:-translate-y-1/2 md:bg-transparent md:p-4 xl:pl-24">
-          <div className="flex min-h-24 items-center">
+          {/* <div className="flex min-h-24 items-center">
             <div
               className={
                 textIndex === 1
@@ -124,7 +124,7 @@ const Main_sec = () => {
             >
               Bleacher Report
             </div>
-          </div>
+          </div> */}
           <div className="w-10/12 md:w-11/12">
             <Image
               alt=""
@@ -135,12 +135,15 @@ const Main_sec = () => {
             />
           </div>
           <div className="my-2 font-druk_text_medium text-xl md:text-2xl">
-            EA SPORTS™ UFC® 5 Ultimate Edition
+            NETO GAMES STUDIO , COMBAT FIELD
           </div>
           <div className="my-2 font-druk_text_medium md:text-lg">
-            Begin your UFC 5 journey with the Ultimate Edition, packed with more
-            fighter content than ever, including Hall of Fame Alter Egos, 15
-            newly rostered fighters, and more.
+            Combat Field introduces a new and exciting style of online PTOE
+            (Player-To-Objective Experience) shooters. This game stands out from
+            similar titles thanks to its captivating destructible environments,
+            fast-paced gunplay, and innovative approach to shooting and cover
+            mechanics. The story of this first-person shooter unfolds through a
+            multi-stage dream sequence experienced by the main character
           </div>
           <div className="md:flex">
             <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
@@ -161,12 +164,13 @@ const Frostbite_sec = () => {
       <div className="black_bg">
         <div className="relative h-max overflow-hidden">
           <div className="px-10 py-20 text-center text-white md:px-20">
-            <h1>Powered by Frostbite™</h1>
+            <h1>POWERED BY UNREAL ENGINE</h1>
             <p>
-              EA SPORTS™ UFC® 5 is the next evolution of the fight game.
-              Experience unrivaled graphics upgrades, all-new damage systems,
-              and more new features that affect gameplay in truly authentic
-              fashion.
+              The game's graphics will be incredibly realistic, thanks to the
+              use of Unreal Engine . Explosion effects, dynamic textures for
+              weapons, artistic design of environments and maps, characters, and
+              more will be crafted with meticulous attention to detail and high
+              precision
             </p>
           </div>
         </div>
@@ -187,10 +191,13 @@ const HalfPic_sec = () => {
         />
 
         <div className="mx-auto w-11/12 md:w-1/2 md:px-16">
-          <h1 className="text-black">UFC 5 NEW ROSTERED FIGHTER RATINGS</h1>
+          <h1 className="text-black">
+            THE GUNPLAY IN THIS GAME WILL DRIVE YOU INSANE
+          </h1>
           <p className="text-black">
-            Check out EA SPORTS UFC 5's new rostered fighter ratings and prepare
-            to dominate inside the Octagon.
+            In Combat Field, you face a fast-paced and chaotic shooter
+            experience. Battles in Combat Field demand that you outskill and
+            outsmart your opponents to emerge victorious
           </p>
           <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">LEARN MORE</div>
@@ -207,10 +214,14 @@ const HalfPic_sec = () => {
         />
 
         <div className="mx-auto w-11/12 md:w-1/2 md:px-16">
-          <h1 className="text-black">Prime: European Elites Alter Egos</h1>
+          <h1 className="text-black">
+            IN COMBAT FIELD , YOU WILL ENCOUNTER SEVEEAL UNIQUE CLASSES
+          </h1>
           <p className="text-black">
-            Celebrate UFC 304 Fight Week with 4 new Alter Egos from Prime:
-            European Elites.
+            Each of these classes has access to unique weapons and abilities.
+            The Heavy class can carry light machine guns or heavy hammers and
+            use these weapons to demolish walls. Additionally, this class has
+            more health
           </p>
           <button className="btn m-2 w-full rounded-3xl bg-[#F04] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-44 sm:text-lg md:hover:scale-105">
             <div className="btn_div">SEE THE ALTER EGOS</div>
@@ -223,41 +234,37 @@ const HalfPic_sec = () => {
 const Col1_sec = () => {
   return (
     <section>
-      <h1 className="pb-8 pt-20 text-center text-black">LATEST NEWS</h1>
+      <h1 className="pb-8 pt-20 text-center text-black">
+        THE GAME WILL FEATURE SEVERAL MODES
+      </h1>
       <div className="mx-auto max-w-[1120px] px-7 md:flex md:px-20 xl:px-2">
         <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_1} width={0} height={0} className="" />
           <div>
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">DOMINATION</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              Here's everything you need to know about voting for future Alter
-              Egos in EA SPORTS UFC 5.
+              To score points, capture objectives, hold them, and defend. The
+              first team to reach the required score wins
             </p1>
           </div>
         </div>
         <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_2} width={0} height={0} className="" />
           <div>
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">FREE FOR ALL</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              Here's everything you need to know about voting for future Alter
-              Egos in EA SPORTS UFC 5.
+              Eliminate all opponents. The first player to reach the target
+              score ends the game. The top three players win
             </p1>
           </div>
         </div>
         <div className="md:w-1/3 md:px-3">
           <Image alt="" src={col_pic_3} width={0} height={0} className="" />
           <div>
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">KILL CONFIRMED</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              Here's everything you need to know about voting for future Alter
-              Egos in EA SPORTS UFC 5.
+              Eliminate enemies, collect their tags, and prevent your team's
+              tags from being collected by the enemy
             </p1>
           </div>
         </div>
@@ -277,58 +284,44 @@ const Col2_sec = () => {
         <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_1} width={0} height={0} className="" />
           <div className="px-5 pb-8">
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">RANDOM GAME</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              What makes an MMA fight? It's the stakes, technique, drama, and
-              pure reality of the moment. UFC 5 captures that in more authentic
-              detail than ever before, from next-generation graphics upgrades
-              that give gameplay animations new life, damage systems that marry
-              the brutality and strategy of the fight game, gameplay updates
-              that make the action feel even more fluid and realistic, and much
-              more.
+              In the Random mode, you will connect with other online players and
+              begin competing. In this mode, the system will form two teams from
+              the players present in the lobby to compete against each other.
+              After the match, you can stay in the lobby and continue competing
+              with the same players
             </p1>
           </div>
         </div>
         <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_2} width={0} height={0} className="" />
           <div className="px-5 pb-8">
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">FRIENDLY GAME</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              What makes an MMA fight? It's the stakes, technique, drama, and
-              pure reality of the moment. UFC 5 captures that in more authentic
-              detail than ever before, from next-generation graphics upgrades
-              that give gameplay animations new life, damage systems that marry
-              the brutality and strategy of the fight game, gameplay updates
-              that make the action feel even more fluid and realistic, and much
-              more.
+              In the Friendly Game mode, you can send game requests to your
+              friends (by searching their user ID, you can send a friend
+              request) and play together. Additionally, you can also compete in
+              teams against other teams, which will be detailed further
             </p1>
           </div>
         </div>
         <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_3} width={0} height={0} className="" />
           <div className="px-5 pb-8">
-            <h2 className="text-black">
-              EA SPORTS UFC 5 Alter Ego Community Vote
-            </h2>
+            <h2 className="text-black">WEEKLY REWARD</h2>
             <p1 className="my-2 font-druk_text_medium text-black md:text-base">
-              What makes an MMA fight? It's the stakes, technique, drama, and
-              pure reality of the moment. UFC 5 captures that in more authentic
-              detail than ever before, from next-generation graphics upgrades
-              that give gameplay animations new life, damage systems that marry
-              the brutality and strategy of the fight game, gameplay updates
-              that make the action feel even more fluid and realistic, and much
-              more.
+              The game features weekly rewards distributed through loot boxes.
+              These loot boxes contain tokens, weapon skins, character skins,
+              and other similar prizes. The loot boxes are awarded based on the
+              time spent playing the game
             </p1>
           </div>
         </div>
       </div>
       <div className="mx-auto flex justify-center py-20">
-        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:w-max sm:text-lg md:hover:scale-105">
-          <div className="btn_div">NEW GAMEPLAY FEATURES</div>
+        <button className="btn m-2 w-full rounded-3xl border-2 border-black bg-transparent p-5 py-3 font-druk_text_medium uppercase text-black hover:scale-[102%] sm:w-max sm:text-lg md:hover:scale-105">
+          <div className="btn_div">Buy Now</div>
         </button>
       </div>
     </section>
@@ -337,7 +330,7 @@ const Col2_sec = () => {
 const Bottum_pic_sec = () => {
   return (
     <section>
-      <div className="relative max-h-[30rem] overflow-hidden md:max-h-max">
+      <div className="relative max-h-[36rem] overflow-hidden md:max-h-max">
         <picture>
           <source
             srcSet="./home/buttom_pic_mobile.jpg"
@@ -354,13 +347,14 @@ const Bottum_pic_sec = () => {
         </picture>
 
         <div className="absolute bottom-10 px-10 md:bottom-auto md:left-16 md:top-1/2 md:w-2/5 md:-translate-y-1/2">
-          <p className="mb-0 pb-1 text-lg">
-            EA SPORTS™ UFC® 5 Ultimate Edition
-          </p>
+          <p className="mb-0 pb-1 text-lg">NETO GAME STUDIO , COMBAT FIELD</p>
           <p className="mt-0 pt-0">
-            Get the Ultimate Edition and get multiple Alter Ego Bundles
-            (including from Pride and Prime drops), 3 new Legends fighters, and
-            more.
+            In recent years, Battle Royale games have gained more popularity
+            compared to other shooter genres. However, there are gamers seeking
+            a different type of experience—one that emphasizes Play-to-Earn
+            (P2E) mechanics. These maps focus on achieving specific objectives
+            through team collaboration, rather than competing against 100 other
+            players for survival
           </p>
           <button className="btn m-2 w-full rounded-3xl border-2 bg-white p-5 py-3 font-druk_text_medium text-black hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
             <div className="btn_div">BUY NOW</div>
@@ -382,10 +376,10 @@ const Gradient_sec = () => {
           className="my-2 w-10/12"
         />
         <div className="my-2 font-druk_wide_super uppercase lg:text-[27px]">
-          Try now for up to 10 hours!**
+          TRY NOW ON NETO PLAY FUSION
         </div>
-        <button className="btn mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
-          <div className="btn_div">LEARN MORE</div>
+        <button className="btn mt-5 w-full rounded-3xl bg-[#ff4747] p-5 py-3 font-druk_text_medium uppercase hover:scale-[102%] sm:max-w-36 sm:text-lg md:hover:scale-105">
+          <div className="btn_div">Start Now</div>
         </button>
       </div>
     </section>
@@ -395,7 +389,7 @@ const SocialMedia_sec = () => {
   return (
     <section>
       <div className="overflow-hidden py-10 text-center">
-        <h1 className="pb-5 text-black">FOLLOW US @EASPORTSUFC</h1>
+        <h1 className="pb-5 text-black">FOLLOW US ON OUR SOCIAL MEDIA</h1>
         <div className="flex justify-center pb-5">
           <div className="border-r border-black p-5 sm:p-10">
             <a className="cursor-pointer text-black transition duration-300 ease-in-out">
