@@ -280,7 +280,7 @@ const Col1_sec = () => {
 const Col2_sec = () => {
   return (
     <section>
-      <div className="mx-auto max-w-[1120px] md:flex md:px-20 xl:px-2">
+      <div className="mx-auto md:flex md:w-full md:px-20 xl:w-11/12 xl:px-2">
         <div className="py-3 md:w-1/3 md:px-3">
           <Image alt="" src={col2_pic_1} width={0} height={0} className="" />
           <div className="px-5 pb-8">

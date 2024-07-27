@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import logo from "../../public/home/logo_main.png";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState("-translate-x-96");
@@ -75,7 +76,10 @@ export default function Navbar() {
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              About
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                About
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   GamePlay
@@ -92,13 +96,16 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              Maps
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                maps
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Dust Storm
@@ -124,13 +131,16 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              Game Mode
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                game mode
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Capture the flag
@@ -147,13 +157,16 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              Assistant Tools
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                Assistant Tools
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   UAV
@@ -170,13 +183,16 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              News and Media
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                news and media
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   News
@@ -187,13 +203,17 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
           <li className="flex pb-2">
             <a
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              Community
+              <div className="flex items-center uppercase [&_.up]:hover:rotate-180">
+                Community
+                <SlArrowDown className="up size-5 px-1 transition-transform duration-300" />
+              </div>
+
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
                   Forum
@@ -204,7 +224,7 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          {/* <li className="text-gray-300"></li> */}
         </ul>
         <a className="absolute right-5 hidden md:block">
           <div className="relative m-2 hidden w-full rounded-3xl bg-[#F04] p-5 py-3 text-center font-druk_text_medium sm:max-w-36 sm:text-lg md:block [&_*]:hover:max-h-52">
@@ -276,7 +296,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div>
-                    ABOUT
+                    <div className="flex items-center uppercase">
+                      About
+                      <SlArrowDown
+                        className={
+                          accordion.acc1
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc1
@@ -308,7 +337,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    Maps
+                    <div className="flex items-center uppercase">
+                      maps
+                      <SlArrowDown
+                        className={
+                          accordion.acc2
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc2
@@ -349,7 +387,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    Game Mode
+                    <div className="flex items-center uppercase">
+                      game mode
+                      <SlArrowDown
+                        className={
+                          accordion.acc3
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc3
@@ -381,7 +428,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    Assistant Tools
+                    <div className="flex items-center uppercase">
+                      assistant tools
+                      <SlArrowDown
+                        className={
+                          accordion.acc4
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc4
@@ -411,7 +467,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    News and Media
+                    <div className="flex items-center uppercase">
+                      news and media
+                      <SlArrowDown
+                        className={
+                          accordion.acc5
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc5
@@ -437,7 +502,16 @@ export default function Navbar() {
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
                   <div className="">
-                    Community
+                    <div className="flex items-center uppercase">
+                      community
+                      <SlArrowDown
+                        className={
+                          accordion.acc6
+                            ? "size-5 rotate-180 px-1 transition-transform duration-300"
+                            : "size-5 px-1 transition-transform duration-300"
+                        }
+                      />
+                    </div>
                     <div
                       className={
                         accordion.acc6
