@@ -13,7 +13,7 @@ import col2_pic_1 from "../../public/home/col2_pic_1.jpg";
 import col2_pic_2 from "../../public/home/col2_pic_2.jpg";
 import col2_pic_3 from "../../public/home/col2_pic_3.jpg";
 import buttom_pic_pc from "../../public/home/buttom_pic_pc.jpg";
-import gradient_logo from "../../public/home/gradient_logo.svg";
+import gradient_logo from "../../public/home/gradient_logo.png";
 import Navbar from "./navbar";
 
 const Main_sec = () => {
