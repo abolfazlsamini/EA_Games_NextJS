@@ -346,7 +346,7 @@ const Bottum_pic_sec = () => {
           />
         </picture>
 
-        <div className="absolute bottom-10 px-10 md:bottom-auto md:left-16 md:top-1/2 md:w-2/5 md:-translate-y-1/2">
+        <div className="absolute bottom-10 px-10 md:bottom-auto md:left-16 md:top-1/2 md:w-3/5 md:-translate-y-1/2 xl:w-2/5">
           <p className="mb-0 pb-1 text-lg">NETO GAME STUDIO , COMBAT FIELD</p>
           <p className="mt-0 pt-0">
             In recent years, Battle Royale games have gained more popularity
