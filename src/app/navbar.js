@@ -78,39 +78,16 @@ export default function Navbar() {
               About
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  GamePlay
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  EA Play Membership
+                  Features and Modes
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  peresentation
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
-                </div>
-              </div>
-            </a>
-          </li>
-          <li className="text-gray-300"></li>
-          <li className="flex pb-2">
-            <a
-              className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
-              href="/"
-            >
-              AlterEgo
-              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  EA Play Membership
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
-                </div>
-                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  NT Playfusion membership
                 </div>
               </div>
             </a>
@@ -121,19 +98,108 @@ export default function Navbar() {
               className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
               href="/"
             >
-              Fighters
+              Maps
               <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  Dust Storm
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  EA Play Membership
+                  Urban Siege
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  Artic Blast
                 </div>
                 <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
-                  Gameplay
+                  Jungle Havoc
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Desert Mirage
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Metro Mayhem
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Devils Mountain
+                </div>
+              </div>
+            </a>
+          </li>
+          <li className="text-gray-300"></li>
+          <li className="flex pb-2">
+            <a
+              className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              href="/"
+            >
+              Game Mode
+              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Capture the flag
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Dominitaion
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Free for all
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Kill Confirmed
+                </div>
+              </div>
+            </a>
+          </li>
+          <li className="text-gray-300"></li>
+          <li className="flex pb-2">
+            <a
+              className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              href="/"
+            >
+              Assistant Tools
+              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  UAV
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Counter UAV
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Cruise Missile
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Remote Turret
+                </div>
+              </div>
+            </a>
+          </li>
+          <li className="text-gray-300"></li>
+          <li className="flex pb-2">
+            <a
+              className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              href="/"
+            >
+              News and Media
+              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  News
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Trailer & Screenshots
+                </div>
+              </div>
+            </a>
+          </li>
+          <li className="text-gray-300"></li>
+          <li className="flex pb-2">
+            <a
+              className="relative self-center font-druk_text_medium text-lg font-bold text-white hover:text-[#f04] [&_*]:hover:max-h-52"
+              href="/"
+            >
+              Community
+              <div className="absolute -left-1/2 max-h-0 w-48 overflow-hidden bg-black text-white transition-all duration-500 hover:text-[#f04]">
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Forum
+                </div>
+                <div className="cursor-pointer px-10 py-2 text-sm text-white hover:text-[#f04]">
+                  Newsletter Sign Up
                 </div>
               </div>
             </a>
@@ -246,7 +312,7 @@ export default function Navbar() {
                     <div
                       className={
                         accordion.acc2
-                          ? "max-h-52 px-3 transition-transform duration-300"
+                          ? "max-h-[64rem] px-3 transition-transform duration-300"
                           : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
                       }
                     >
@@ -278,7 +344,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                    SetAccordion({ ...accordion, acc3: !accordion.acc3 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
@@ -286,7 +352,7 @@ export default function Navbar() {
                     Game Mode
                     <div
                       className={
-                        accordion.acc2
+                        accordion.acc3
                           ? "max-h-52 px-3 transition-transform duration-300"
                           : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
                       }
@@ -310,7 +376,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                    SetAccordion({ ...accordion, acc4: !accordion.acc4 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
@@ -318,7 +384,7 @@ export default function Navbar() {
                     Assistant Tools
                     <div
                       className={
-                        accordion.acc2
+                        accordion.acc4
                           ? "max-h-52 px-3 transition-transform duration-300"
                           : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
                       }
@@ -340,7 +406,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                    SetAccordion({ ...accordion, acc5: !accordion.acc5 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
@@ -348,7 +414,7 @@ export default function Navbar() {
                     News and Media
                     <div
                       className={
-                        accordion.acc2
+                        accordion.acc5
                           ? "max-h-52 px-3 transition-transform duration-300"
                           : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
                       }
@@ -366,7 +432,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <div
                   onClick={() =>
-                    SetAccordion({ ...accordion, acc2: !accordion.acc2 })
+                    SetAccordion({ ...accordion, acc6: !accordion.acc6 })
                   }
                   className="relative cursor-pointer py-3 transition-all duration-300"
                 >
@@ -374,7 +440,7 @@ export default function Navbar() {
                     Community
                     <div
                       className={
-                        accordion.acc2
+                        accordion.acc6
                           ? "max-h-52 px-3 transition-transform duration-300"
                           : "max-h-0 overflow-hidden border-b pb-3 transition-all duration-300"
                       }
